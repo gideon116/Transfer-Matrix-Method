@@ -1,1 +1,5 @@
-# Transfer-Matrix-Method
+# The Transfer Matrix Method
+A common approach for determining the real and imagenry part of the refractive index calculates interface and a propagation together for each layer, for that reason it tells us to only consider the film as the layer and exclude the substrate and air (only including their refractive indices in coefficients eta_1 and eta_N). This also  considers the substrate as a semi infinite non absorbing material. This becomes problematic when (1) we have a substrate that becomes slightly absorbing at certain wavelengths (like SiO2 at high energy regimes) and (2) it excludes the effect of the final substrate/air interface. This is a good apporximation, nonetheless, a more complete approach would be to treat the interfaces and propagations separately,  including the substrate propagation. I do this with in the code here. 
+
+Below is comparison of the calculated transmission/reflection (using the calculated n and k) and the measured transmission/reflection
+![image001](https://github.com/user-attachments/assets/74736398-a193-4cc9-9583-1f9e2b88248e)
