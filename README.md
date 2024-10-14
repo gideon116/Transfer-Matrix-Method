@@ -41,7 +41,7 @@ $$
 and
 
 $$
-T = \left( \frac{n_{\text{SiO}_2}}{n_{\text{air}}} \right) \left| \frac{1}{M_{0,0}} \right|^2
+T = \left( \frac{n_{\text{{SiO}_2}}}{n_{\text{air}}} \right) \left| \frac{1}{M_{0,0}} \right|^2
 $$
 
 $$
