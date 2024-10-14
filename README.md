@@ -24,7 +24,7 @@ $$
 r = \frac{n_1 - n_2}{n_1 + n_2}, \quad t = \frac{2 n_1}{n_1 + n_2}
 $$
 
-(I am assuming a normal incidence angle here for the simplicity of writing the equation, but in the code, we can plug in whatever angle we want.) Note for \( n_{\text{CZP}} \) we use the complex form where $\( n_{\text{CZP}} = n + i k \)$ (here n and k are what we are solving for), and for $\( n_{\text{SiO}_2} \)$, we can simply look up a database and use its refractive indices for the range of wavelengths we have.
+(I am assuming a normal incidence angle here for the simplicity of writing the equation, but in the code, we can plug in whatever angle we want.) Note for $\( n_{\text{CZP}} \)$ we use the complex form where $\( n_{\text{CZP}} = n + i k \)$ (here n and k are what we are solving for), and for $\( n_{\text{SiO}_2} \)$, we can simply look up a database and use its refractive indices for the range of wavelengths we have.
 
 The propagation matrices are defined by:
 
@@ -32,13 +32,17 @@ $$
 P = \begin{bmatrix} e^{i \beta d} & 0 \\ 0 & e^{-i \beta d} \end{bmatrix}
 $$
 
-where $\( \beta = \frac{2 \pi n_{\text{material}}}{\lambda} \) and $\( d \) is the thickness of the material. After making four matrices for the interfaces and layer propagations mentioned above, we can simply perform matrix multiplication to find the overall transfer matrix, $\( M \). From $\( M \) we can find:
+where $\( \beta = \frac{2 \pi n_{\text{material}}}{\lambda} \)$ and $\( d \) is the thickness of the material. After making four matrices for the interfaces and layer propagations mentioned above, we can simply perform matrix multiplication to find the overall transfer matrix, $\( M \). From $\( M \) we can find:
 
 $$
 R = \left| \frac{M_{1,0}}{M_{0,0}} \right|^2
 $$
 
 and
+
+$$
+T = \left| \frac{n_{\text{SiO}}}{n_{\text{air}}} \right|^2
+$$
 
 $$
 T = \left( \frac{n_{\text{SiO}_2}}{n_{\text{air}}} \right) \left| \frac{1}{M_{0,0}} \right|^2
