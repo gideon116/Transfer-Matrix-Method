@@ -27,7 +27,7 @@ $$
 r = \frac{n_1 - n_2}{n_1 + n_2}, \quad t = \frac{2 n_1}{n_1 + n_2}
 $$
 
-(I am assuming a normal incidence angle here for the simplicity of writing the equation, but in the code, we can plug in whatever angle we want.) Note for $\( n_{\text{CZP}} \)$ we use the complex form where $\( n_{\text{CZP}} = n + i k \)$ (here n and k are what we are solving for), and for $\( n_{\text{SiO}_2} \)$, we can simply look up a database and use its refractive indices for the range of wavelengths we have.
+We are  assuming a normal incidence angle here for simplicity, but in the code, we can plug in whatever angle we want. Note for $\( n_{\text{CZP}} \)$ we use the complex form where $\( n_{\text{CZP}} = n + i k \)$ (keep in mind n and k are what we are solving for), and for $\( n_{\text{SiO}_2} \)$, we can simply look up a database and use its refractive indices for the range of wavelengths we have.
 
 The propagation matrices are defined by:
 
