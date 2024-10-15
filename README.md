@@ -44,10 +44,6 @@ and
 T = \left( \frac{n_{\text{SiO}_2}}{n_{\text{air}}} \right) \left| \frac{1}{M_{0,0}} \right|^2
 ```
 
-$$
-T = \left( \frac{n_{\text{SiO}_2}}{n_{\text{air}}} \right) \left| \frac{1}{M_{0,0}} \right|^2
-$$
-
 So we can just use the experimental T to calculate the loss as it contains M, which in turn contains n and k (which we are fitting). And lastly, the calculation is highly dependent on the thickness of the CZP layer, and we need to know the actual thickness for an accurate calculation.
 
 (I tried using n and k values of the preceding wavelengths as initial guesses, but this seems to lead to bad error propagation as the error from each calculation compounds).
