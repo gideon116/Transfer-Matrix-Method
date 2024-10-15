@@ -16,7 +16,7 @@ Each of these interfaces and layer propagations gives us a matrix (D) that defin
 
 $$
 
-I = \begin{bmatrix}
+\begin{bmatrix}
 1 & r\\
 r & 1
 \end{bmatrix}
