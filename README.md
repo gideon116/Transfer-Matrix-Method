@@ -1,6 +1,6 @@
 # The Transfer Matrix Method
 
-This project is associated with the calculation of the real and imaginary parts of the refractive index of CaZn₂P₂ (see [this paper](https://doi.org/10.1002/aenm.202402640)); however, the concepts and the calculation apply to any system.
+This project is associated with the calculation of the real and imaginary parts of the refractive index of CaZn₂P₂ (see [this paper](https://doi.org/10.1002/aenm.202402640)), however, the concepts and the calculation apply to any system.
 
 The modeling of light propagation through a material can become very complicated once we have more than one interface. We can solve the propagation equations analytically by hand for two layers (or repetitions of two layers), but once we have more than two, we can't do it by hand, and at a certain point, we cannot determine the analytical solution with computers in a reasonable time frame and need to resort to a numerical solution.
 
