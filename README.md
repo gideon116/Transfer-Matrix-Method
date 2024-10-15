@@ -15,7 +15,7 @@ The light passes through air to the film, through the SiO₂ substrate, and thro
 Each of these interfaces and layer propagations gives us a matrix (D) that defines how the incoming light is related to the outgoing light. Fortunately, it's not too complicated to derive these matrices (see [MIT Lecture Notes](https://ocw.mit.edu/courses/3-024-electronic-optical-and-magnetic-properties-of-materials-spring-2013/bc1be0fe02cf4f8845cc7c8c5ed97008_MIT3_024S13_2012lec23.pdf)). The interfaces can be simplified to the matrix:
 
 $$
-I = \begin{bmatrix}
+I = \frac{1}{t} \begin{bmatrix}
 1 & r\\
 r & 1
 \end{bmatrix}
