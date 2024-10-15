@@ -50,8 +50,6 @@ $$
 
 So we can just use the experimental T to calculate the loss as it contains M, which in turn contains n and k (which we are fitting). And lastly, the calculation is highly dependent on the thickness of the CZP layer, and we need to know the actual thickness for an accurate calculation.
 
-(I tried using n and k values of the preceding wavelengths as initial guesses, but this seems to lead to bad error propagation as the error from each calculation compounds).
-
 A common approach for simplifying the calculation of the real and imaginary parts of the refractive index is to calculate the interface and propagation together for each layer (see [this MATLAB code](https://www.mathworks.com/matlabcentral/fileexchange/50923-jreftran-a-layered-thin-film-transmission-and-reflection-coefficient-calculator)). This tells us to only consider the film as the layer and exclude the substrate and air (only including their refractive indices in coefficients \( \eta_1 \) and \( \eta_N \)). This also considers the substrate as a semi-infinite non-absorbing material. This becomes problematic when (1) we have a substrate that becomes slightly absorbing at certain wavelengths (like SiO₂ at high energy regimes) and (2) it excludes the effect of the final substrate/air interface. This is a good approximation; nonetheless, a more complete approach would be to treat the interfaces and propagations separately, including the substrate propagation. I do this within the code here.
 
 Below is a comparison of the calculated transmission/reflection (using the calculated n and k) and the measured transmission:
