@@ -32,7 +32,10 @@ $$
 The propagation matrices are defined by:
 
 $$
-P = \begin{bmatrix} e^{i \beta d} & 0 \\ 0 & e^{-i \beta d} \end{bmatrix}
+P = \begin{bmatrix}
+e^{i \beta d} & 0\\
+0 & e^{-i \beta d}
+\end{bmatrix}
 $$
 
 where $\( \beta = \frac{2 \pi n_{\text{material}}}{\lambda} \)$ and $\( d \)$ is the thickness of the material. After making four matrices for the interfaces and layer propagations mentioned above, we can simply perform matrix multiplication to find the overall transfer matrix, $\( M \)$. From $\( M \)$ we can find:
