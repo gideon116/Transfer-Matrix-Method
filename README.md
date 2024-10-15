@@ -16,6 +16,12 @@ Each of these interfaces and layer propagations gives us a matrix (D) that defin
 
 $$
 I = \frac{1}{t} \begin{bmatrix} 1 & r \\ r & 1 \end{bmatrix}
+
+\frac{1}{t} \begin{bmatrix}
+1 & r\\
+r & 1
+\end{bmatrix}
+
 $$
 
 where \( r \) and \( t \) are obtained from the Fresnel equations:
