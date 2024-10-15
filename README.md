@@ -52,5 +52,10 @@ A common approach for determining the real and imaginary parts of the refractive
 
 Below is a comparison of the calculated transmission/reflection (using the calculated n and k) and the measured transmission:
 
-![image001](https://github.com/user-attachments/assets/74736398-a193-4cc9-9583-1f9e2b88248e)
-![image005](https://github.com/user-attachments/assets/40f874a0-e81d-4a5a-9e1e-8f39bf72ee08)
+<div align="center">
+    <img src="https://github.com/user-attachments/assets/74736398-a193-4cc9-9583-1f9e2b88248e" width="500">
+</div>
+
+<div align="center">
+    <img src="https://github.com/user-attachments/assets/40f874a0-e81d-4a5a-9e1e-8f39bf72ee08" width="500">
+</div>
