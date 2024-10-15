@@ -41,13 +41,13 @@ $$
 where $\( \beta = \frac{2 \pi d n_{\text{material}}}{\lambda} \)$ and d is the thickness of the material. After making four matrices for the interfaces and layer propagations mentioned above, we can simply perform matrix multiplication to find the overall transfer matrix, M. From M we can find:
 
 $$
-R = \left| \frac{M_{1,0}}{M_{0,0}} \right|^2
+R = \left| \frac{M_{2,1}}{M_{1,1}} \right|^2
 $$
 
 and
 
 ```math
-T = \left( \frac{n_{\text{SiO}_2}}{n_{\text{air}}} \right) \left| \frac{1}{M_{0,0}} \right|^2
+T = \left| \frac{1}{M_{1,1}} \right|^2
 ```
 
 So we can just use the experimental T to calculate the loss as it contains M, which in turn contains n and k (which we are fitting). And lastly, the calculation is highly dependent on the thickness of the CZP layer, and we need to know the actual thickness for an accurate calculation.
