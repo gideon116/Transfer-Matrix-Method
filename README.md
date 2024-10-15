@@ -43,12 +43,10 @@ where $\( \beta = \frac{2 \pi d n_{\text{material}}}{\lambda} \)$ and d is the t
 $$
 R = \left| \frac{M_{2,1}}{M_{1,1}} \right|^2
 $$
-
 and
-
-```math
+$$
 T = \left| \frac{1}{M_{1,1}} \right|^2
-```
+$$
 
 So we can just use the experimental T to calculate the loss as it contains M, which in turn contains n and k (which we are fitting). And lastly, the calculation is highly dependent on the thickness of the CZP layer, and we need to know the actual thickness for an accurate calculation.
 
