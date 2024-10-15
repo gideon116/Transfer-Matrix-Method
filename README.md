@@ -9,7 +9,7 @@ The light passes through air to the film, through the SiO₂ substrate, and thro
 - **Interface 1**: air–CZP
 - **Layer 1**: CZP
 - **Interface 2**: CZP–SiO₂
-- **Layer 2**: SiO₂ (I assumed to be 2 mm thick)
+- **Layer 2**: SiO₂ (assumed to be 2 mm thick)
 - **Interface 3**: SiO₂–air
 
 Each of these interfaces and layer propagations gives us a matrix $\( D_{\text{i}} \)$ that defines how the incoming light is related to the outgoing light. Fortunately, it's not too complicated to derive these matrices (see [MIT Lecture Notes](https://ocw.mit.edu/courses/3-024-electronic-optical-and-magnetic-properties-of-materials-spring-2013/bc1be0fe02cf4f8845cc7c8c5ed97008_MIT3_024S13_2012lec23.pdf)). The interfaces can be simplified to:
@@ -54,7 +54,7 @@ So we can just use the experimental T to calculate the loss as it contains M, wh
 
 (I tried using n and k values of the preceding wavelengths as initial guesses, but this seems to lead to bad error propagation as the error from each calculation compounds).
 
-A common approach for determining the real and imaginary parts of the refractive index calculates interface and propagation together for each layer (see [this MATLAB code](https://www.mathworks.com/matlabcentral/fileexchange/50923-jreftran-a-layered-thin-film-transmission-and-reflection-coefficient-calculator)); for that reason, it tells us to only consider the film as the layer and exclude the substrate and air (only including their refractive indices in coefficients \( \eta_1 \) and \( \eta_N \)). This also considers the substrate as a semi-infinite non-absorbing material. This becomes problematic when (1) we have a substrate that becomes slightly absorbing at certain wavelengths (like SiO₂ at high energy regimes) and (2) it excludes the effect of the final substrate/air interface. This is a good approximation; nonetheless, a more complete approach would be to treat the interfaces and propagations separately, including the substrate propagation. I do this within the code here.
+A common approach for simplifying the calculation of the real and imaginary parts of the refractive index is to calculate the interface and propagation together for each layer (see [this MATLAB code](https://www.mathworks.com/matlabcentral/fileexchange/50923-jreftran-a-layered-thin-film-transmission-and-reflection-coefficient-calculator)). This tells us to only consider the film as the layer and exclude the substrate and air (only including their refractive indices in coefficients \( \eta_1 \) and \( \eta_N \)). This also considers the substrate as a semi-infinite non-absorbing material. This becomes problematic when (1) we have a substrate that becomes slightly absorbing at certain wavelengths (like SiO₂ at high energy regimes) and (2) it excludes the effect of the final substrate/air interface. This is a good approximation; nonetheless, a more complete approach would be to treat the interfaces and propagations separately, including the substrate propagation. I do this within the code here.
 
 Below is a comparison of the calculated transmission/reflection (using the calculated n and k) and the measured transmission:
 
